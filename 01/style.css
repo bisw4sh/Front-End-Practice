@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+  .sidebar {
+    width: 180px;
+    height: 100vh;
+    background-color: #162036;
+    color: #9ca3af;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .sidebar-top,
+  .sidebar-center,
+  .sidebar-bottom {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    border-bottom: 1px solid #4b4b4b;
+    padding: 10px 0;
+    margin-bottom: 10px;
+  }
+
+   .sidebar-top img{
+    transform: rotate(15deg);
+    cursor: pointer;
+    height: 3rem;
+    margin-left: 30px;
+  }
+
+  .sidebar-top img:hover{
+    filter: drop-shadow(0px 10px 4px #00e5ff);
+    transform: rotate(360deg);
+    transition: transform 500ms 100ms ease-in-out;
+  }
+  
+  .sidebar-center {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+  }
+  
+  .sidebar-bottom {
+    justify-content: center;
+    border: none;
+  }
+  
+  
+  .list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .list-item {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .list-item-icon {
+    width: 30px;
+    font-size: 20px;
+  }
+  
+  .list-item.active,
+  .list-item:hover {
+    background-color: #374151;
+    color: white;
+  }
+  
+  .color-box {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid #9ca3af;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  
+  .dark {
+    background-color: #111827;
+  }
+  
+  .night {
+    background-color: #312e81;
+  }
+  
+  .light {
+    background-color: #f3f4f6;
+  }
+  
+  .sidebar.night {
+    background-color: #312e81;
+    color: #b4bbc7;
+  }
+  
+  .list-item.night.active {
+    background-color: #4338ca;
+  }
+  
+  .sidebar.light {
+    background-color: #f3f4f6;
+    color: #111827;
+  }
+  
+  .list-item.light.active {
+    background-color: #d1d5db;
+    color: #111827;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .sidebar {
+      width: 50px;
+    }
+    .brand,
+    .list-item-text {
+      display: none;
+    }
+
+    .sidebar-top img{
+        margin-left: 8px;
+        height: 15px;
+    }
+  }
