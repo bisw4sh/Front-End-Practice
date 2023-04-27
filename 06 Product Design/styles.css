@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --blue: #4ba9e9;
+    --white: #fff;
+    --black: #000;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(var(--blue), var(--blue) 50%, 
+                var(--white) 50%, var(--white) 100%) ;
+}
+
+.card{
+    position: relative;
+    width: 300px;
+    height: 380px;
+    background-color: var(--blue);
+    box-shadow: 0 15px 45px rgba(0,0 , 0, 0.1);
+    display: flex;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover{
+    width: 600px;
+}
+
+.card .imgBx{
+    position: relative;
+    min-width: 300px;
+    height: 100%;
+    background: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.card .imgBx img{
+    max-width: 250px ;
+    rotate: 40deg;
+    transition:  0.5s ease-in-out;
+}
+
+.card:hover .imgBx img{
+    transform: rotate(-50deg) translateX(-20px);
+}
+
+.cards .details{
+    position: absolute;
+    left: 0;
+    min-width: 300px;
+    height: 100%;
+    background: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    flex-direction: column;
+    z-index: 1;
+    transition:  0.5s ease-in-out;
+}
+
+.cards:hover .details{
+    left: 30px;
+}
+
+.card .details::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid var(--white);
+}
+
+.card .details h3{
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.5em;
+    line-height: 1em;
+}
+
+.card .details h3 span{
+    font-size: 0.65em;
+    font-weight: 300;
+    text-transform: none;
+    opacity: 0.85;
+}
+
+.card .details h4{
+    color:var(--white);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.9em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 1em;
+}
+
+.card .details p{
+    color: var(--white);
+    opacity: 0.85;
+    font-size: 0.8em;
+}
+
+.card .details .size{
+    display: flex;
+    gap: 10px;
+}
+
+.card .details .size li{
+    list-style: none;
+    color: var(--white);
+    font-size: 0.9em;
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    opacity: 0.65;
+    cursor: pointer;
+}
+
+.card .details .size li:hover{
+    color: var(--blue);
+    background: var(--white);
+    opacity: 1;
+}
+
+.card .details .group{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.card .details .group h2{
+    color: var(--white);
+    font-weight: 600;
+    font-size: 2em;
+}
+.card .details .group h2 sup{
+    font-weight: 300;
+}
+
+.card .details .group h2 small{
+    font-size: 0.75em;
+}
+
+.card .details .group a{
+    display: inline-flex;
+    padding: 10px 25px;
+    background: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--blue);
+}
