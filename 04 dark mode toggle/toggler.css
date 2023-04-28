@@ -7,12 +7,12 @@
     border-radius:  30px;
     cursor: pointer;
     transition: all linear .2s;
-
 }
 
 .cont.active{
     background-color: rgb(8, 8, 8);
 }
+
 .tog{
     height: 1rem; 
     width: 1rem; 
