@@ -12,6 +12,7 @@
    --color2: #159895;
    --color3:#1A5F7A;
    --color4: #002B5B;
+   --color5: #000000;
 }
 
 body{
@@ -74,9 +75,14 @@ section img{
 }
 
 .close{
-
     color:red;
     position: absolute;
+    top: 15px;
+    right:15px;
+}
+
+.mouse{
+    color: var(--color5);
     top: 15px;
     right:15px;
 }
