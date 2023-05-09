@@ -7,4 +7,22 @@
 
 body{
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table{
+    padding: 20px;
+    height: 20rem;
+    border-collapse: collapse;
+}
+th,td{
+    padding: 10px;
+    /* border: rgb(0, 0, 0) 1px solid; */
+}
+
+
+tr:nth-of-type(odd){
+    background-color: rgb(184, 188, 190);
 }
