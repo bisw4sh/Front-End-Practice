@@ -1,0 +1,81 @@
+/* Scrollbar div */
+::-webkit-scrollbar{
+    width: 8px;
+    margin-right: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:black;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background:rgb(115, 111, 111);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+/* main */
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height:100vh;
+    overflow:hidden;
+}
+:root{
+    --fontSize: 7.5em;
+}
+
+/* The major problem is that the displayed scrollbar belongs to the body,
+where no scroll-snap properties have been defined.
+This is why you do not have any snapping behaviour when scrolling.
+
+To achieve your expected result, we need to
+
+1. Be sure that the displayed scrollbar belongs to the parent div
+2. Define the overflow behaviour to the parent container to scroll */
+
+.container{
+    overflow-x:hidden;
+    overflow-y: scroll;
+    height:100vh;
+    scroll-snap-type: y mandatory;
+
+}
+
+.child{
+    height: 100vh;
+    scroll-snap-align: start;
+    font-size: var(--fontSize);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one{
+    background-color: rgb(147, 125, 125);
+}
+
+.two{
+    background-color: rgb(88, 73, 73);
+}
+
+.three{
+    background-color: rgb(100, 119, 122);
+}
+
+.four{
+    background-color: rgb(124, 152, 112);
+}
+
+.five{
+    background-color: rgb(24, 76, 136);
+}
