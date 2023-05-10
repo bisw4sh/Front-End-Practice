@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 *{
+    font-family: 'Poppins', sans-serif;
     margin:0;
     padding:0;
+    box-sizing: border-box;
+    color:aliceblue;
 }
 body {
     font-family: sans-serif;
@@ -10,6 +15,14 @@ body {
   
   #app {
     height: 100%;
+  }
+
+  span{
+    position: absolute;
+    font-size: 60px;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(3px 3px 10px rgb(60, 0, 255));
   }
   
 
