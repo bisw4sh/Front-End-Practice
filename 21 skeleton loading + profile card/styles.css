@@ -1,0 +1,87 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #d7d7d7;    
+}
+
+body{
+    background-color: #1B1B1D;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    border-radius: 10px;
+    background-color: white; 
+    padding: 1rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:25rem;
+}
+
+.banner{
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    height:10rem;
+    width: 100%;
+}
+
+.profilepic{
+    position:  relative;
+    inset: -50px auto auto auto;
+    border: solid 1px black;
+    border-radius: 50%;
+    height:100px;
+    width:100px;
+    background-color:var(--primary-color);
+}
+
+.UpperLine{
+    height:1.5rem;
+    width: 18rem;
+    background-color:var(--primary-color);
+}
+
+.twoline{
+    margin-top:0.5rem;
+    height: 1rem;
+    width: 14rem;
+    background-color:var(--primary-color);
+}
+
+.tags{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 3fr 1fr;
+    align-content: start;
+    gap:1rem;
+}
+
+.tag-line{
+    margin-top:2rem;
+    background-color: var(--primary-color);
+    height:2rem;
+}
+
+.highlights{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: start;
+}
+
+.pictures{
+    margin:2rem 1rem auto;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    height: 5rem;
+}
