@@ -84,6 +84,7 @@ body{
 
 /* this has to be fixed */
 .buy{
+    align-self: flex-start;
     height: 2.1rem;
     width: 40%;
 }
