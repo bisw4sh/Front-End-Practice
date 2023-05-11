@@ -1,0 +1,90 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #d7d7d7;    
+}
+
+.banner, .discount, .tag, .one, .two, .three, .buy{
+    background-color: var(--primary-color);
+}
+body{
+    background-color: #1B1B1D;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    position: relative;
+    border-radius: 10px;
+    background-color: white; 
+    padding: 1rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+    width:20rem;
+}
+
+.banner{
+    border-radius: 10px;
+    height:10rem;
+    width: 100%;
+}
+
+.prices{
+    width: 100%;
+    height: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.discount{
+    height: 100%;
+    width: 6rem;
+}
+
+.tag{
+    height: 100%;
+    width: 3.5rem;
+}
+
+.lines{
+    margin-top:1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:.5rem;
+}
+
+.one{
+    height: 1rem;
+    border-radius: 4px;
+}
+
+.two{
+    height: 1rem;
+    width: 70%;
+    border-radius: 4px;
+}
+
+.three{
+    height: 1rem;
+    width: 80%;
+    border-radius: 4px;
+}
+
+
+/* this has to be fixed */
+.buy{
+    height: 2.1rem;
+    width: 40%;
+}
+
