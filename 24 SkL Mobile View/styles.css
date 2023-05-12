@@ -1,0 +1,153 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #d7d7d7;    
+}
+
+body{
+    background-color: #1B1B1D;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    border-radius: 10px;
+    background-color: white; 
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+    width: 25rem;
+}
+
+header{
+    height:1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 2rem;
+    width: 10rem;
+    background-color: var(--primary-color);
+}
+
+.circles{
+    display: flex;
+    gap:.5rem;
+}
+.circle{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+
+nav{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    gap:1rem;
+}
+
+.nav-items{
+    background-color: var(--primary-color);
+    height: 2rem;
+}
+
+.post{
+    margin-top: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.area{
+    margin-right: 1rem;
+    border-radius: 20px;
+    background-color: var(--primary-color);
+    height: 2rem;
+    width: 85%;
+}
+
+.stories{
+    margin-top: 1rem;
+    width: 100%;
+    height: 8rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:1rem;
+}
+
+.story{
+    border-radius: 5px;
+    background-color: var(--primary-color);
+}
+
+main{
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:.5rem;
+}
+
+.details{
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.details-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.name{
+    height: .9rem;
+    width: 7rem;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+}
+
+.time-details{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap:.5rem;
+}
+.time{
+    background-color: var(--primary-color);
+    height: .75rem;
+    width: 20%;
+    border-radius: 5px;
+}
+
+.dot{
+    height: .75rem;
+    width: .75rem;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+
+.posted{
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 18rem;
+}
