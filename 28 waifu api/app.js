@@ -1,14 +1,22 @@
 const logJSONData = async(type, category) => {
     const response = await fetch(`https://api.waifu.pics/${type}/${category}`);
     const jsonData = await response.json();
-    console.log(jsonData);
+
+    //setting the image in DOM
+    const ima_ge = document.querySelector('.image-response')
+    ima_ge.src = jsonData['url']
+    return jsonData['url']
   }
 
 // Define the data
 const data = {
-    "sfw" : [ 'waifu', 'neko', 'shinobu', 'megumin', 'bully', 'cuddle', 'cry', 'hug','awoo',
-        'kiss', 'lick', 'pat', 'smug', 'bonk', 'yeet', 'blush', 'smile', 'wave', 'highfive', 'handhold',
-        'nom', 'bite', 'glomp','slap', 'kill', 'kick', 'happy', 'wink', 'poke', 'dance', 'cringe'],
+    "sfw" : [ 'waifu', 'neko', 'shinobu', 'megumin',
+            'bully', 'cuddle', 'cry', 'hug','awoo',
+            'kiss', 'lick', 'pat', 'smug', 'bonk', 
+            'yeet','blush', 'smile', 'wave', 'highfive',
+            'handhold','nom', 'bite', 'glomp','slap',
+            'kill','kick','happy', 'wink', 'poke',
+            'dance', 'cringe'],
     "nsfw" :['waifu', 'neko', 'trap', 'blowjob']
 };
 
@@ -23,7 +31,7 @@ function populatecategory() {
     // Add the default option
     const defaultOption = document.createElement("option");
     defaultOption.value = "";
-    defaultOption.text = "--Please choose an option--";
+    defaultOption.text = "Select";
     categoryDropdown.add(defaultOption);
 
     // Add the options based on the selected category
@@ -44,7 +52,6 @@ const typesel = document.querySelector('#type')
 const categorysel = document.querySelector('#category')
 document.querySelector('.submit').addEventListener('click', (e) => {
     e.preventDefault()
-    console.log(typesel.value, categorysel.value)
-    logJSONData(typesel.value,categorysel.value)
+logJSONData(typesel.value,categorysel.value)
 })
 
