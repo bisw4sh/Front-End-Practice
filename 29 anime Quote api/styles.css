@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Rancho&family=Water+Brush&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+body{
+    background-color: rgb(112, 107, 107);
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quoteContainer{
+    color:white;
+    border-radius: 10px;
+    background-color: rgb(52, 44, 44);
+    height: 20rem;
+    width:40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.anime, .character, .quote{
+    text-align: center;
+    margin-top: 1rem;
+    padding:1rem;
+}
+
