@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0;
+  padding:0;
+  --bar: #17b727a3;
+  --scatter: rgba(65, 0, 230, 0.827);
+
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+body{
+background: #2193b0;
+background: -webkit-linear-gradient(to right, #6dd5eda9, #2193b0a3);
+background: linear-gradient(to right, #6dd5ed96, #2193b0a1);
+width: 100vw;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+#barChart{
+  max-width: 700px;
+  max-height: 50vh;
+}
+
+#scatterChart{
+  max-width: 700px;
+  max-height: 50vh;
+}
+
+#lineGraph{
+  max-width: 700px;
+  max-height: 50vh;
+}
+
+#muLines{
+  max-width: 700px;
+  max-height: 50vh;
+}
+
+/* #linearGraphs{
+  max-width: 700px;
+  max-height: 50vh;
+} */
