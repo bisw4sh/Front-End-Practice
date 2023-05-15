@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "fusioncharts": "^3.20.0",
+    "parcel-bundler": "^1.12.5"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  },
+  "name": "00test",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
