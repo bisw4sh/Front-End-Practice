@@ -28,3 +28,16 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+.jsGenerated{
+    border: 5px red solid;
+    border-radius: 10px;
+    color:white;
+    background-color: rgb(52, 44, 44);
+    height: 20rem;
+    width:40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
