@@ -49,6 +49,7 @@ body{
 
   to{
     filter: hue-rotate(1turn);
+    transform: rotate(360deg);
   }
 
 }
