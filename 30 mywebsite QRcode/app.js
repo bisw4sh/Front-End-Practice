@@ -1,11 +1,15 @@
 const imageElement = document.querySelector('.imgCon')
+const submit = document.querySelector('.submit')
+const url = document.querySelector('.url')
 
-window.onload = async() => {
+
+const genQR = async(e) => {
+  e.preventDefault()
+
   try{
-
-  const response = await fetch(`https://qrtag.net/api/qr_12.png?url=https://www.biswashdhungana.com.np`, {redirect: 'follow'})
+  let string = url.value || `www.biswashdhungana.com.np`
+  const response = await fetch(`https://qrtag.net/api/qr_12.png?url=https://${string}`, {redirect: 'follow'})
   let blob = await response.blob()
-  console.log(blob)
   const imageUrl = await URL.createObjectURL(blob)
   imageElement.src = await imageUrl  
 
@@ -14,7 +18,9 @@ window.onload = async() => {
 
     console.log(err)
     console.log("Turn OFF CORS policy to view JS generated")
-    document.querySelector('.imgCon').style.display = 'none'
+    document.querySelector('.jsGenerated').style.display = 'none'
 
   }
 }
+
+submit.addEventListener('click', genQR)

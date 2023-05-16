@@ -12,11 +12,29 @@ body{
     min-height: 100vh;
     width: 100vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 }
 
+form{
+    margin: 1rem;
+    padding: 1rem;
+}
+
+
+input{
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+button{
+    padding: .5rem 1rem;
+}
 .quoteContainer{
+    margin: 1rem;
+    padding: 1rem;
     border: 5px red solid;
     border-radius: 10px;
     color:white;
@@ -29,7 +47,12 @@ body{
     align-items: center;
 }
 
+.quoteContainer img{
+    height:100%;
+}
 .jsGenerated{
+    margin: 1rem;
+    padding: 1rem;
     border: 5px red solid;
     border-radius: 10px;
     color:white;
@@ -41,3 +64,6 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+.jsGenerated img{
+    height:100%;}
