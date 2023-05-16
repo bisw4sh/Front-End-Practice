@@ -10,8 +10,8 @@ const genQR = async(e) => {
   let string = url.value || `www.biswashdhungana.com.np`
   const response = await fetch(`https://qrtag.net/api/qr_12.png?url=https://${string}`, {redirect: 'follow'})
   let blob = await response.blob()
-  const imageUrl = await URL.createObjectURL(blob)
-  imageElement.src = await imageUrl  
+  const imageUrl = URL.createObjectURL(blob)
+  imageElement.src = imageUrl  
 
   }
   catch(err){
