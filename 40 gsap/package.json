@@ -1,0 +1,19 @@
+{
+  "name": "40-bouncejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build --dist-dir public index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  },
+  "dependencies": {
+    "gsap": "^3.11.5"
+  }
+}
