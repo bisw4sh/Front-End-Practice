@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Rancho&family=Water+Brush&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+}
+
+.waves-container{
+    width: 100vw;
+    position: absolute;
+    bottom:0;
+}
+
+.text{
+    font-size: 60px;
+    position: relative;
+    top:80px;
+    text-align: center;
+    background-image:linear-gradient(to right, #03001e, #7303c0, #ec38bc, #fdeff9);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
