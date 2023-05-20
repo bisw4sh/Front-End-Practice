@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Rancho&family=Water+Brush&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(90deg, #2cd9ff, #7effb2);
+    background-size: 400% 400%;
+    animation: anim 2.5s infinite ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @keyframes anim{
+    0%{
+      background-position: 0 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0 50%;
+    }
+  }
+
+  .container{
+    padding: 1rem;
+    font-size: 25p0;
+    color:white;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    background-size: 400% 400%;
+    animation: anim 2.5s infinite ease-in-out;
+    width: 40rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+h1{
+  line-height: 1.5;
+    font-size: 2rem;
+    background: linear-gradient(270deg, #3f5efb, #fc466b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2,h3{
+  text-align: center;
+}
