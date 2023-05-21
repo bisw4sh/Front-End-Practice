@@ -8,5 +8,5 @@ graph TD;
     progress --recurring process-->
     progress --failed attempts-->
     progress --patience-->
-    progress-->E(Aspiring Developer)
+    progress-->E(((Aspiring Developer)))
 ```
