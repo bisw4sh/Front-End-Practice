@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+*{
+  font-family: Montserrat, sans-serif;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  color: white;
+}
+
+body{
+  background-color: #333399;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bubble{
+  height: 30rem;
+  width: 30rem;
+  background: linear-gradient(to right, #ff00cc, #333399d2);
+  opacity: .5;
+  border-radius: 50%;
+  transition: all ease-in-out 1s infinite;
+  animation-name: jiggly;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes jiggly {
+  0%   {border-radius: 54% 46% 0% 100% / 51% 100% 0% 49% ;}
+  25%  {border-radius: 51% 100% 0% 49% / 52% 48% 65% 35%;}
+  50%  {border-radius: 52% 48% 65% 35% / 51% 100% 0% 49%;
+        transform: rotate(80deg);
+        opacity: 0; }
+  75%  {border-radius: 53% 47% 71% 29% / 0% 100% 0% 100% ;}
+  100% {border-radius: 50%;}
+}
