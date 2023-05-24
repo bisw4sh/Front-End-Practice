@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+*{
+  font-family: Montserrat, sans-serif;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  color: white;
+}
+
+body{
+  background-color: #333399;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Center the bubble */
+body {
+background: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff);
+align-items: center;
+justify-content: center;
+height: 100vh;
+margin: 0;
+}
+
+/* Create the bubble */
+.bubble{
+border-radius: 50%;
+width: 20rem;
+height: 20rem;
+position: relative;
+animation: jiggle 5s ease-in-out infinite .5s;
+background-image: linear-gradient(to right, #2193b0, #6dd5ed);
+display: flex;
+justify-content: center;
+align-items: center;
+filter: grayscale(1); 
+filter: hue-rotate(1);
+
+}
+
+.bubble:hover{
+  filter: grayscale(0);
+  filter: drop-shadow(4px 4px 4px rgb(107, 101, 101));
+}
+
+.bubble img{
+height: 80%;
+opacity: .5;
+animation: bouncy 5s ease-in-out infinite .5s;
+}
+
+.bubble img:hover{
+filter:drop-shadow(4px 4px 4px #786b6b)
+        drop-shadow(-4px -4px 4px #000);
+}
+
+/* Define the jiggle animation */
+@keyframes jiggle {
+0%{
+  border-radius: 50% 60% 70% 30%/50% 70% 60% 50%;
+  transform: translate(20px, 20px);
+}
+
+50%{ 
+  border-radius: 50% 70% 60% 50%/30% 50% 70% 50%;
+  transform: translate(20px, 20px);
+  filter: hue-rotate(50deg);
+}
+
+100%{
+  border-radius: 30% 50% 70% 50%/50% 70% 60% 50%;
+  transform: translate(20px, 20px);
+  filter: hue-rotate(90deg);
+}
+}
+
+
+@keyframes bouncy{
+ 0%{
+  transform: translate(0px, 10px)
+ }
+ 50%{
+  transform: translate(0px, -10px);
+ }
+  }
