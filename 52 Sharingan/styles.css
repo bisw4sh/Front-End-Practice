@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #200122, #6f0000);
+}
+
+.custom-loader {
+    width: 80px;
+    height: 80px;
+    display: grid;
+    color:#6f0000;
+    -webkit-mask:radial-gradient(circle 5px,#0000 90%,#000);
+    mask:radial-gradient(circle 5px,#0000 90%,#000);
+    animation:sh3 2.5s infinite linear;
+  }
+  .custom-loader:before,
+  .custom-loader:after {
+    content: "";
+    grid-area: 1/1;
+    background: 
+      radial-gradient(farthest-side at bottom left, currentColor 94%,#0000) top left, 
+      radial-gradient(farthest-side at top right  , currentColor 94%,#0000) bottom right;
+    background-size: 63% 50%;
+    background-repeat: no-repeat;
+    -webkit-mask: 
+      radial-gradient(65% 110% at bottom left, #0000 94%,#000) top left, 
+      radial-gradient(65% 110% at top   right, #0000 94%,#000) bottom right;    
+    mask: 
+    radial-gradient(65% 110% at bottom left, #0000 94%,#000) top left, 
+    radial-gradient(65% 110% at top   right, #0000 94%,#000) bottom right;
+    -webkit-mask-size: 62% 50%;
+    mask-size: 62% 50%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+  }
+  .custom-loader:after {
+    transform: rotate(90deg);
+  }
+  
+  @keyframes sh3 { 
+    100%{transform: rotate(1turn)}
+  }
+
+  .outerCircle{
+    position: absolute;
+    background-color: black;
+    border-radius: 50%;
+    padding: 10px;
+    top: 48%;
+    left: 49.5%;
+}
+
+  .eye{
+    height: 20rem;
+  }
+
+  .custom-loader{
+    scale: 2;
+  }
