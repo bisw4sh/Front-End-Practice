@@ -26,6 +26,7 @@ body{
     flex-direction: column;
     align-items: center;
     width: 30rem;
+    animation: skeleton-loading 1s linear infinite alternate;
 }
 
 .banner{
@@ -65,3 +66,13 @@ body{
     border-radius:3px;
     background-color: var(--primary-color);
 }
+
+
+@keyframes skeleton-loading {
+    0% {
+      background-color: hsl(204, 4%, 47%);
+    }
+    100% {
+      background-color: hsl(210, 1%, 28%);
+    }
+  }

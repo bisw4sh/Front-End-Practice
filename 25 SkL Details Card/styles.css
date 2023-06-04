@@ -27,6 +27,7 @@ body{
     align-items: center;
     width: 50rem;
     gap:.8rem;
+    animation: skeleton-loading 1s linear infinite alternate;
 }
 
 .banner{
@@ -89,3 +90,12 @@ body{
     width: 80%;
     border-radius: 3px;
 }
+
+@keyframes skeleton-loading {
+    0% {
+      background-color: hsl(204, 4%, 47%);
+    }
+    100% {
+      background-color: hsl(210, 1%, 28%);
+    }
+  }
