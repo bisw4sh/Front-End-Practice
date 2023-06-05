@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "name": "John Doe",
+      "date_of_birth": "1990-05-12",
+      "location": "New York"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "date_of_birth": "1988-10-20",
+      "location": "Los Angeles"
+    },
+    {
+      "id": 3,
+      "name": "David Johnson",
+      "date_of_birth": "1995-02-08",
+      "location": "Chicago"
+    },
+    {
+      "id": 4,
+      "name": "Emily Davis",
+      "date_of_birth": "1992-07-15",
+      "location": "Houston"
+    },
+    {
+      "id": 5,
+      "name": "Michael Wilson",
+      "date_of_birth": "1985-12-03",
+      "location": "San Francisco"
+    },
+    {
+      "id": 6,
+      "name": "Sophia Thompson",
+      "date_of_birth": "1993-04-25",
+      "location": "Seattle"
+    },
+    {
+      "id": 7,
+      "name": "William Anderson",
+      "date_of_birth": "1998-09-18",
+      "location": "Miami"
+    },
+    {
+      "id": 8,
+      "name": "Olivia Martinez",
+      "date_of_birth": "1991-01-30",
+      "location": "Dallas"
+    },
+    {
+      "id": 9,
+      "name": "James Taylor",
+      "date_of_birth": "1987-06-09",
+      "location": "Boston"
+    },
+    {
+      "id": 10,
+      "name": "Ava Harris",
+      "date_of_birth": "1994-11-27",
+      "location": "Denver"
+    }
+  ]
+  
